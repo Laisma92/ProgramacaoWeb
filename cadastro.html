@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Adoção ou Doação - ONG Amigão</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Formulário de Adoção ou Doação</h1>
+
+  <form action="processa_formulario.php" method="post">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="tipo">Você deseja:</label>
+    <select id="tipo" name="tipo" required>
+      <option value="">Selecione</option>
+      <option value="adotar">Adotar um animal</option>
+      <option value="doar">Fazer uma doação</option>
+    </select>
+
+    <label for="animal">Se for adoção, qual tipo de animal?</label>
+    <select id="animal" name="animal">
+      <option value="">Selecione</option>
+      <option value="cachorro">Cachorro</option>
+      <option value="gato">Gato</option>
+      <option value="outro">Outro</option>
+    </select>
+
+    <label for="valor">Se for doação, qual valor deseja contribuir?</label>
+    <input type="number" id="valor" name="valor" min="1" step="0.01" placeholder="R$">
+
+    <label for="mensagem">Mensagem ou observações:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos sobre sua motivação ou dúvidas."></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
