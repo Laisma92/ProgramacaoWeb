@@ -4,40 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voluntariado e Doação de Animais</title>
- 
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Voluntariado e Adoção de Animais</h1>
-  </header>
-
-  <main>
-    <section>
-      <h2>Por que ser voluntário ou adotar?</h2>
-      <p>O voluntariado em abrigos de animais é uma forma poderosa de transformar vidas. Ao doar seu tempo, você ajuda a cuidar, socializar e preparar os animais para adoção responsável.</p>
+   <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">💙 Projeto Voluntários</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projeto.html" class="active">Projetos</a></li>
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+     <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Conheça as nossas ações</h1>
+            <p>Saiba mais sobre nossos Projetos de Voluntariado e Adoção de Animais.</p>
+        </div>
     </section>
-
-    <section>
-      <h2>Como funciona a doação de animais?</h2>
-      <p>Se você deseja adotar um animal, saiba mais:</p>
-      <ul>
-        <li>o animal é vacinado.</li>
-        <li>informamos sobre seu comportamento, idade e necessidades.</li>
-        <li>Agende uma visita e conheça os voluntários responsáveis.</li>
-      </ul>
+    <section class="grid-projeto">
+        <div class="colunas-projeto">
+          <h2>Por que ser voluntário ou adotar?</h2>
+          <p>O voluntariado em abrigos de animais é uma forma poderosa de transformar vidas. Ao doar seu tempo, você ajuda a cuidar, socializar e preparar os animais para adoção responsável.</p>
+          <ul></ul>
+        </div>
+        <div class="colunas-projeto">
+          <h2>Como funciona a adoção de animais?</h2>
+          <p>Se você deseja adotar um animal, saiba mais:</p><br>
+            <ul>
+              <li>o animal é vacinado.</li>
+              <li>informamos sobre seu comportamento, idade e necessidades.</li>
+              <li>Agende uma visita e conheça os voluntários responsáveis.</li>
+            </ul>
+        </div>
+        <div class="colunas-projeto-imagem">
+          <h2>Exemplo animais adotados</h2>
+          <img src="img/coelho.jpg" alt="coelho adotado" width="150" height="150">
+          <img src="img/cachorro2.jpg" alt="cachorro adotado" width="150" height="150">
+          <img src="img/gato.jpg" alt="gato adotado" width="150" height="150">
+        </div>
     </section>
-
-    <section>
-      <h2>Exemplo animais adotados</h2>
-      <img src="img/coelho.jpg" alt="coelho adotado" width="150" height="150">
-      <img src="img/cachorro2.jpg" alt="cachorro adotado" width="150" height="150">
-      <img src="img/gato.jpg" alt="gato adotado" width="150" height="150">
-
+      <!-- Call to Action -->
+    <section class="cta">
+            <div class="cta-buttons">
+                <a href="cadastro.html" class="btn-primary">Cadastre-se</a>
+                <a href="index.html" class="btn-secondary">Voltar ao Início</a>
+            </div>
+        </div>
     </section>
-  </main>
 
   <footer>
     <p>&copy; 2025 ONG Amigão - Todos os direitos reservados</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
