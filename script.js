@@ -37,8 +37,12 @@ function handleSubmit(event) {
     const formData = {
         nome,
         email,
+        endereço,
+        cidade,
+        estado,
         telefone: form.telefone.value.trim(),
         idade: form.idade.value.trim(),
+        cpf:form.cpf.value.trim(),
         disponibilidade: form.disponibilidade.value.trim(),
         areaInteresse: form['area-interesse'].value.trim(),
         experiencia: form.experiencia.value.trim(),
@@ -84,9 +88,13 @@ function exibirVoluntarios() {
     voluntarios.forEach(v => {
         html += `<tr>
             <td>${v.nome}</td>
+            <td>${v.cpf}</td>
             <td>${v.email}</td>
             <td>${v.telefone}</td>
             <td>${v.idade}</td>
+            <td>${v.endereço}</td>
+            <td>${v.cidade}</td>
+            <td>${v.estado}</td>
             <td>${v.disponibilidade}</td>
             <td>${v.areaInteresse}</td>
             <td>${v.dataCadastro}</td>
